@@ -25,8 +25,6 @@ class Board:
         return 1 if player 1 wins
         return 2 if player 2 wins
         '''
-
-        #Wins
         #Vertical
         for col in range(COLS):
             if self.squares[0][col] == self.squares[1][col] == self.squares[2][col] !=0:
@@ -155,7 +153,7 @@ class Game:
 
      def __init__(self):
          self.ai = AI()
-         self.game_mode = "ai" ## PVP OR AI
+         self.game_mode = "ai"
          self.running = True
          self.board = Board()
          self.showLines()
